@@ -97,16 +97,18 @@ export default function WaitlistPage() {
           <Card className="p-8">
             <form className="space-y-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium">Name</label>
+                <label htmlFor="name" className="text-sm font-medium">Name</label>
                 <Input
+                  id="name"
                   placeholder="Your name"
                   variant="bordered"
                 />
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium">Email</label>
+                <label htmlFor="email" className="text-sm font-medium">Email</label>
                 <Input
+                  id="email"
                   type="email"
                   placeholder="your.email@example.com"
                   variant="bordered"
@@ -114,8 +116,9 @@ export default function WaitlistPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium">Experience Level</label>
+                <label htmlFor="experience" className="text-sm font-medium">Experience Level</label>
                 <Select
+                  id="experience"
                   placeholder="Select your experience level"
                   variant="bordered"
                 >
@@ -126,8 +129,9 @@ export default function WaitlistPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium">What are you most interested in learning?</label>
+                <label htmlFor="interests" className="text-sm font-medium">What are you most interested in learning?</label>
                 <Textarea
+                  id="interests"
                   placeholder="Tell us what topics you're most interested in..."
                   variant="bordered"
                   className="min-h-[100px]"
@@ -144,7 +148,7 @@ export default function WaitlistPage() {
               </Button>
 
               <p className="text-center text-default-500 text-sm mt-4">
-                By joining the waitlist, you'll receive email notifications when new sessions are scheduled. We respect your privacy and will never share your information.
+                By joining the waitlist, you&apos;ll receive email notifications when new sessions are scheduled. We respect your privacy and will never share your information.
               </p>
             </form>
           </Card>

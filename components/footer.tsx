@@ -25,8 +25,8 @@ const sections = {
         <div className="space-y-4">
           <h3 className="text-lg font-semibold">About Sahaib</h3>
           <p>
-            Hi! I'm Sahaib Singh, a full-stack developer and AI enthusiast. With over 5 years of experience
-            in web development, I'm passionate about creating modern, user-friendly applications and
+            Hi! I&apos;m Sahaib Singh, a full-stack developer and AI enthusiast. With over 5 years of experience
+            in web development, I&apos;m passionate about creating modern, user-friendly applications and
             helping others learn to do the same.
           </p>
           <p>
