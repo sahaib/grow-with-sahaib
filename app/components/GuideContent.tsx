@@ -119,7 +119,7 @@ export default function GuideContent() {
                     <h2 className={title({ size: "sm", class: "mb-4" })}>Introduction</h2>
                     <div className="prose dark:prose-invert max-w-none">
                       <p>
-                        This guide will walk you through building a Viral Tweet Generator app using AI integration in less than one hour. We'll be using AI tools to do most of the heavy lifting, making this perfect for creators with minimal coding experience. The entire project was developed with only 10% actual coding, as everything was accomplished using Cursor IDE with AI assistance.
+                        This guide will walk you through building a Viral Tweet Generator app using AI integration in less than one hour. We&apos;ll be using AI tools to do most of the heavy lifting, making this perfect for creators with minimal coding experience. The entire project was developed with only 10% actual coding, as everything was accomplished using Cursor IDE with AI assistance.
                       </p>
                       <div className="bg-default-50 p-4 rounded-lg mt-4">
                         <h4 className="font-semibold mb-2">Project Links</h4>
@@ -263,10 +263,10 @@ cd viral-tweet-generator
                     <div className="prose dark:prose-invert max-w-none">
                       <div className="relative">
                         <CodeBlock
-                          code={`Let's create a new tweet generation app in this project in which i have just done the setup using https://www.heroui.com/docs/guide/installation.
+                          code={`Let&apos;s create a new tweet generation app in this project in which i have just done the setup using https://www.heroui.com/docs/guide/installation.
 This tweet generator should use AI via Groq setup and fallback to Openrouter model meta-llama/llama-3.3-70b-instruct:free
 
-Role: You're a viral content strategist for tech and AI. Create high-engagement tweets that blend curiosity, urgency, and debate.
+Role: You&apos;re a viral content strategist for tech and AI. Create high-engagement tweets that blend curiosity, urgency, and debate.
 
 Context:
 Audience: Tech founders, developers, AI enthusiasts.
@@ -280,9 +280,9 @@ Key Elements to Include:
 - Viral Structure: Short lines, emoji breaks (🚀/🤯/💡), italics for emphasis
 
 Examples for Inspiration:
-"Google just killed 100 AI startups with ONE update. Here's how to survive…"
+"Google just killed 100 AI startups with ONE update. Here&apos;s how to survive…"
 "AI can now clone your voice in 3 seconds. Why is no one panicking?"
-"Saying 'AI won't take your job' is like saying 'the internet is a fad' in 1995. Fight me."
+"Saying &apos;AI won&apos;t take your job&apos; is like saying &apos;the internet is a fad&apos; in 1995. Fight me."
 
 We need a really good GUI for this based the ui library that we have already setup which is heroUI.
 We even have API from newsapi.org so we can use that for sourcing news.`}
@@ -313,7 +313,7 @@ We even have API from newsapi.org so we can use that for sourcing news.`}
                           <ol className="list-decimal list-inside space-y-2">
                             <li>Sign up at <Link href="https://openrouter.ai/" isExternal>OpenRouter</Link></li>
                             <li>Generate an API key</li>
-                            <li>We'll specifically use the meta-llama/llama-3.3-70b-instruct:free model</li>
+                            <li>We&apos;ll specifically use the meta-llama/llama-3.3-70b-instruct:free model</li>
                             <li>Add the API key to your environment variables</li>
                           </ol>
                         </div>
@@ -385,7 +385,7 @@ import { HeartHandshake } from 'lucide-react';`}
                       </ol>
                       <div className="relative">
                         <CodeBlock
-                          code={`Let's integrate the News API from newsapi.org to provide current tech and AI news that users can use as inspiration for their tweets. We'll need to:
+                          code={`Let&apos;s integrate the News API from newsapi.org to provide current tech and AI news that users can use as inspiration for their tweets. We&apos;ll need to:
 
 1. Fetch recent headlines
 2. Display them in a clean UI component
@@ -419,7 +419,7 @@ import { HeartHandshake } from 'lucide-react';`}
                     <div className="prose dark:prose-invert max-w-none">
                       <div className="relative">
                         <CodeBlock
-                          code="let's integrate Vercel Analytics to this app especially for the tweet generator!"
+                          code="let&apos;s integrate Vercel Analytics to this app especially for the tweet generator!"
                           language="markdown"
                         />
                       </div>
@@ -434,7 +434,7 @@ import { HeartHandshake } from 'lucide-react';`}
                     <div className="prose dark:prose-invert max-w-none">
                       <div className="relative">
                         <CodeBlock
-                          code={`let's add a new section of tweet generator using AI of course but a bit of a different page or section which can generate tweets like this:
+                          code={`let&apos;s add a new section of tweet generator using AI of course but a bit of a different page or section which can generate tweets like this:
 "Social Media will have you sitting on the toilet for 145 mins 😭"
 Use either groq or open router as fallback..
 add a fancy good attractive UI!`}
@@ -452,7 +452,7 @@ add a fancy good attractive UI!`}
                     <div className="prose dark:prose-invert max-w-none">
                       <div className="relative">
                         <CodeBlock
-                          code="now we are going to deploy the app to this git (which you need to do) and then it'll automatically get deployed to vercel, please prepare the app accordingly and make it secure!"
+                          code="now we are going to deploy the app to this git (which you need to do) and then it&apos;ll automatically get deployed to vercel, please prepare the app accordingly and make it secure!"
                           language="markdown"
                         />
                       </div>
