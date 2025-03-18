@@ -67,7 +67,9 @@ export const Navbar = () => {
             <NavbarBrand as="li" className="gap-2 max-w-fit">
               <NextLink className="flex justify-start items-center gap-2" href="/">
                 <GraduationCapIcon className="text-primary w-5 h-5" />
-                <p className="font-bold text-inherit">Grow with Sahaib</p>
+                <p className={`font-bold ${isScrolled ? "bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600" : "text-inherit"}`}>
+                  AI with Devs
+                </p>
               </NextLink>
             </NavbarBrand>
             <ul className="hidden lg:flex gap-4 justify-start ml-4">

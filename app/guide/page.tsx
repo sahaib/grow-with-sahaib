@@ -2,7 +2,7 @@ import { title, subtitle } from "@/components/primitives";
 import { Card } from "@heroui/card";
 import { Link } from "@heroui/link";
 import { button as buttonStyles } from "@heroui/theme";
-import { Clock, Code2, Cpu, ArrowRight } from "lucide-react";
+import { Clock, Code2, Cpu, ArrowRight, Link2 } from "lucide-react";
 
 export default function GuidesPage() {
   return (
@@ -68,15 +68,57 @@ export default function GuidesPage() {
           </div>
         </Card>
 
+        {/* ReURL Guide */}
+        <Card className="p-6 space-y-6">
+          <div className="space-y-2">
+            <h2 className={title({ size: "sm", class: "mb-2" })}>ReURL: Modern URL Shortener</h2>
+            <p className="text-default-600">
+              Build a slick, secure URL shortener with analytics, custom links, and a modern UI — all in under an hour.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <div className="flex items-center gap-2 bg-default-100 px-3 py-1 rounded-full text-sm">
+              <Clock className="w-4 h-4" />
+              <span>1 Hour</span>
+            </div>
+            <div className="flex items-center gap-2 bg-default-100 px-3 py-1 rounded-full text-sm">
+              <Code2 className="w-4 h-4" />
+              <span>10% Coding</span>
+            </div>
+            <div className="flex items-center gap-2 bg-default-100 px-3 py-1 rounded-full text-sm">
+              <Cpu className="w-4 h-4" />
+              <span>AI-Powered</span>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <h3 className="font-medium">You'll Learn:</h3>
+              <ul className="list-disc list-inside text-sm text-default-600">
+                <li>Clerk Authentication Integration</li>
+                <li>Neon PostgreSQL Database Setup</li>
+                <li>Once UI Component Library</li>
+                <li>User Analytics & Rate Limiting</li>
+              </ul>
+            </div>
+
+            <Link 
+              href="/guide/reurl"
+              className={buttonStyles({
+                color: "primary",
+                variant: "flat",
+                className: "w-full justify-between"
+              })}
+            >
+              View Guide
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </Card>
+
         {/* Coming Soon Cards */}
         {[
-          {
-            title: "URL Shortener",
-            description: "Build a modern URL shortening service with custom domains, analytics tracking, and QR code generation.",
-            duration: "1.5 Hours",
-            coding: "15% Coding",
-            comingSoon: true
-          },
           {
             title: "Twitter Bot",
             description: "Create an AI-powered Twitter bot that automatically engages with trending topics and generates relevant content.",

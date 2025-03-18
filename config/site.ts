@@ -4,8 +4,8 @@ import { chipTab } from "@/app/components/primitives";
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Grow with Sahaib",
-  description: "A step-by-step guide for no/low-code creators using AI tools",
+  name: "AI with Devs",
+  description: "Learn to build projects with AI assistance, no coding background required.",
   navItems: [
     {
       label: "Guide",

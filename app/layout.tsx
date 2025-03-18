@@ -76,7 +76,7 @@ export default function RootLayout({
                   title="Sahaib's Twitter"
                 >
                   <span className="text-default-600">Created by</span>
-                  <p className="text-primary">Sahaib Singh</p>
+                  <p className="text-primary">AI with Devs Team</p>
                 </Link>
               </footer>
             </div>

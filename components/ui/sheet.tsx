@@ -31,23 +31,21 @@ export function Sheet({ isOpen, onClose, title, children }: SheetProps) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 20, stiffness: 100 }}
-            className="fixed right-0 top-0 h-[100dvh] w-full max-w-xl bg-background/70 backdrop-blur-xl border-l border-primary/10 shadow-2xl z-[1000] rounded-l-3xl"
+            className="fixed right-0 top-0 h-[100dvh] w-full max-w-xl bg-background/70 backdrop-blur-xl border-l border-primary/10 shadow-2xl z-[1000] rounded-l-3xl flex flex-col"
           >
-            <div className="flex flex-col h-full">
-              <div className="flex items-center justify-between p-8 border-b border-primary/10">
-                <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{title}</h2>
-                <Button
-                  isIconOnly
-                  variant="light"
-                  onClick={onClose}
-                  className="hover:bg-primary/10 rounded-full"
-                >
-                  <XIcon size={24} />
-                </Button>
-              </div>
-              <div className="flex-1 overflow-y-auto p-8">
-                {children}
-              </div>
+            <div className="flex-none p-8 border-b border-primary/10 flex items-center justify-between">
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{title}</h2>
+              <Button
+                isIconOnly
+                variant="light"
+                onClick={onClose}
+                className="hover:bg-primary/10 rounded-full"
+              >
+                <XIcon size={24} />
+              </Button>
+            </div>
+            <div className="flex-1 p-8 overflow-y-auto">
+              {children}
             </div>
           </motion.div>
         </>
