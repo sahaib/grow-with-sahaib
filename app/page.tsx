@@ -6,6 +6,7 @@ import { Link } from "@heroui/link";
 import { Card } from "@heroui/card";
 import { motion } from "framer-motion";
 import { Brain, Code, Rocket, Clock, Users, Star } from "lucide-react";
+import { Chip } from "@heroui/chip";
 
 export default function Home() {
   const container = {
@@ -147,6 +148,67 @@ export default function Home() {
             </div>
           </Card>
         </motion.div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="w-full max-w-5xl mx-6 mb-20"
+      >
+        <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-indigo-500/10 p-8">
+          <div className="absolute inset-0 bg-grid-white/10" />
+          <div className="relative">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="flex-1">
+                <h2 className={title({ size: "sm", class: "mb-4" })}>
+                  AI Prompt Library
+                </h2>
+                <p className="text-default-600 mb-6">
+                  Access our curated collection of AI prompts for coding, writing, and more. Boost your productivity with battle-tested prompts used by professionals.
+                </p>
+                <div className="flex gap-4">
+                  <Button
+                    as={Link}
+                    href="/prompts"
+                    color="primary"
+                    className="w-full md:w-auto"
+                  >
+                    Explore Prompts
+                  </Button>
+                  <Button
+                    as={Link}
+                    href="/waitlist"
+                    variant="bordered"
+                    color="primary"
+                    className="w-full md:w-auto"
+                  >
+                    Submit Prompt
+                  </Button>
+                </div>
+              </div>
+              <div className="flex-1 flex justify-center">
+                <Card className="w-full max-w-sm bg-background/90 backdrop-blur-sm p-4">
+                  <h3 className="font-bold mb-2">Featured Prompt</h3>
+                  <p className="text-sm text-default-600 mb-4">
+                    "Create a detailed technical specification for [project] including system architecture, data models, and API endpoints..."
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-2">
+                      <Chip size="sm" variant="flat" color="primary">
+                        documentation
+                      </Chip>
+                      <Chip size="sm" variant="flat" color="primary">
+                        planning
+                      </Chip>
+                    </div>
+                    <span className="text-xs text-default-400">2.1k uses</span>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

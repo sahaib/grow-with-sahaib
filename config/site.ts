@@ -13,6 +13,11 @@ export const siteConfig = {
       className: ({ isActive }: { isActive: boolean }) => chipTab({ selected: isActive })
     },
     {
+      label: "Prompts",
+      href: "/prompts",
+      className: ({ isActive }: { isActive: boolean }) => chipTab({ selected: isActive })
+    },
+    {
       label: "Resources",
       href: "/resources",
       className: ({ isActive }: { isActive: boolean }) => chipTab({ selected: isActive })
@@ -27,6 +32,10 @@ export const siteConfig = {
     {
       label: "Guide",
       href: "/guide",
+    },
+    {
+      label: "Prompts",
+      href: "/prompts",
     },
     {
       label: "Resources",

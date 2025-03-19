@@ -2,7 +2,8 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@heroui/button";
-import { XIcon } from "lucide-react";
+import { XIcon, Copy, CheckCircle2 } from "lucide-react";
+import { useState, useEffect } from "react";
 
 interface SheetProps {
   isOpen: boolean;
@@ -12,6 +13,23 @@ interface SheetProps {
 }
 
 export function Sheet({ isOpen, onClose, title, children }: SheetProps) {
+  const [mounted, setMounted] = useState(false);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const copyToClipboard = (text: string, id: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedId(id);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -44,7 +62,7 @@ export function Sheet({ isOpen, onClose, title, children }: SheetProps) {
                 <XIcon size={24} />
               </Button>
             </div>
-            <div className="flex-1 p-8 overflow-y-auto">
+            <div className="flex-1 p-8 overflow-y-auto space-y-8">
               {children}
             </div>
           </motion.div>
