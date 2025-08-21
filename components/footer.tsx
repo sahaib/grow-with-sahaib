@@ -149,9 +149,9 @@ const sections = {
     content: (
       <div className="space-y-6">
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">Our Team</h3>
+          <h3 className="text-lg font-semibold">Our Community</h3>
           <p>
-            AI with Devs is backed by a team of experienced developers who&apos;ve been part of my journey 
+            AI with Devs is supported by experienced developers who&apos;ve been part of my journey 
             for over 6 years. Together, we bring diverse expertise to help you learn and grow.
           </p>
         </div>
